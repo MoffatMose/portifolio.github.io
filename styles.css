@@ -174,7 +174,106 @@ header {
             border-radius: 4px;
             transition: width 0.3s ease;
         }
+        /* Education Section */
+        .education {
+            background: white;
+        }
 
+        .education-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            transform: translateX(-50%);
+        }
+
+        .education-item {
+            position: relative;
+            margin-bottom: 3rem;
+            width: 50%;
+            padding: 0 2rem;
+        }
+
+        .education-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .education-item:nth-child(even) {
+            left: 50%;
+            text-align: left;
+        }
+
+        .education-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+
+        .education-item:nth-child(odd)::before {
+            right: -12px;
+        }
+
+        .education-item:nth-child(even)::before {
+            left: -12px;
+        }
+
+        .education-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .education-year {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .education-institution {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .education-description {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .education-gpa {
+            color: #667eea;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
         /* Projects Section */
         .projects-grid {
             display: grid;
