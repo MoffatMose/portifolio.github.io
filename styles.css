@@ -274,6 +274,27 @@ header {
             font-weight: 500;
             margin-top: 0.5rem;
         }
+
+        /* Mobile responsiveness for education timeline */
+        @media (max-width: 768px) {
+            .education-timeline::before {
+                left: 20px;
+            }
+            
+            .education-item {
+                width: 100%;
+                left: 0 !important;
+                text-align: left;
+                padding-left: 3rem;
+                padding-right: 1rem;
+            }
+            
+            .education-item::before {
+                left: 8px !important;
+                right: auto !important;
+            }
+        }
+
         /* Projects Section */
         .projects-grid {
             display: grid;
