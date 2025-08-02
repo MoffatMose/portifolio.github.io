@@ -382,6 +382,46 @@ header {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
+        /* Interests Section */
+.interests {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 3px solid #0a74da;
+}
+
+.interests .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #0a74da;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.interests-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.interests h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.interests h3:hover {
+    color: #0a74da;
+}
 
         /* Contact Section */
         .contact {
@@ -398,7 +438,6 @@ header {
             display: flex; /* Added for consistent height */
             flex-direction: column; /* Added for consistent height */
             min-height: 200px; /* Added for consistent height */
-            /* Existing styles */
             background: #f8f9fa;
             padding: 2rem;
             border-radius: 10px;
