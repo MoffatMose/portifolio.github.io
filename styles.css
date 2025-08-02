@@ -423,30 +423,44 @@ header {
             color: #667eea;
             margin-right: 0.5rem;
         }
-
-        .google-form-container {
-            display: flex; /* Added for consistent height */
-            flex-direction: column; /* Added for consistent height */
-            min-height: 200px; /* Added for consistent height */
-            /* Existing styles */
+        .contact-form {
             background: #f8f9fa;
             padding: 2rem;
             border-radius: 10px;
         }
 
-        .google-form-container h3 {
-            color: #333;
-            font-size: 1.5rem;
+        .form-group {
+            margin-bottom: 1.5rem;
         }
 
-        .google-form-container iframe {
-            flex-grow: 1; /* Added to make iframe fill available space */
-            width: 100%; /* Ensure it takes full width */
-            border: none; /* Removed default iframe border */
-            background: white;
-            border-radius: 10px; /* Match parent border-radius */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 500;
         }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+   
         /* Footer */
         footer {
             background: #333;
